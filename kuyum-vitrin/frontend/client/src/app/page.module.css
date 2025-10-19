@@ -1,0 +1,80 @@
+/* kuyum-vitrin/frontend/client/src/app/page.module.css */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--color-accent-gray);
+}
+
+.priceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.priceCard {
+  background-color: rgba(229, 228, 226, 0.1); /* Semi-transparent accent gray */
+  border: 1px solid var(--color-primary-gold);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.priceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+.priceCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.priceDetails p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceDetails span {
+  font-weight: bold;
+  color: var(--color-text-light);
+}
+
+.priceCard small {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--color-accent-gray);
+  opacity: 0.7;
+}
+
+.error {
+  grid-column: 1 / -1; /* Span all columns */
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(208, 49, 45, 0.2);
+  border: 1px solid var(--color-error);
+  border-radius: var(--border-radius);
+}
