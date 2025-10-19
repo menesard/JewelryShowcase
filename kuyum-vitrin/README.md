@@ -11,13 +11,13 @@ Proje, iki ana bölümden oluşmaktadır:
 
 ## Kurulum ve Çalıştırma
 
-### 1. Backend Sunucusu
+**Önemli:** Aşağıdaki tüm komutları projenin ana dizinindeyken (`kuyum-vitrin/` klasörünün içindeyken) çalıştırmalısınız.
 
-Backend sunucusunu çalıştırmak için:
+### 1. Backend Sunucusu (1. Terminal)
 
 ```bash
 # Backend klasörüne gidin
-cd kuyum-vitrin/backend
+cd backend
 
 # Gerekli bağımlılıkları yükleyin
 npm install
@@ -27,13 +27,11 @@ npm start
 ```
 Sunucu varsayılan olarak `http://localhost:5000` adresinde çalışmaya başlayacaktır.
 
-### 2. Frontend Uygulaması
-
-Frontend uygulamasını çalıştırmak için:
+### 2. Frontend Uygulaması (2. Yeni Terminal)
 
 ```bash
 # Frontend klasörüne gidin
-cd kuyum-vitrin/frontend/client
+cd frontend/client
 
 # Gerekli bağımlılıkları yükleyin
 npm install
